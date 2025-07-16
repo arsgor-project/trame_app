@@ -5,13 +5,12 @@ def setup_state_and_controllers(state, ctrl):
     state.files = [
         {
             'id': 'root',
-            'name': 'Главная папка',
-            'type': 'folder',
-            'icon': 'mdi-folder',
+            'name': 'Таблицы',
             'children': [],
             'open': True
         }
     ]
+    state.files_key = 0
     state.selected_file = None
     state.active_file = None
     state.table_data = []
