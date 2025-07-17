@@ -33,7 +33,7 @@ def add_file_to_tree(state):
     #state.files[0]['children'].append(new_file)
     state.files_key += 1
     state.selected_file = None
-    #print(state.files[0]['children'])
+    print("hello")
 
 
 def handle_tree_selection(items, state):

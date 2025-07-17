@@ -14,12 +14,7 @@ def left_panel(state, ctrl):
                                 accept="*",
                                 multiple=False
                             )
-                            vuetify.VBtn(
-                                "Добавить файл",
-                                click=ctrl.on_add_file,
-                                color="primary",
-                                classes="ma-2"
-                            )
+                            
                         vuetify.VDivider(classes="my-2")
 
                         with vuetify.VCardText(style="overflow-y: auto; flex-grow: 1;"):

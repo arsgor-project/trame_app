@@ -16,5 +16,9 @@ def setup_state_and_controllers(state, ctrl):
     state.table_data = []
     state.headers = []
 
-    ctrl.on_add_file = lambda: add_file_to_tree(state)
+    #ctrl.on_add_file = lambda: add_file_to_tree(state)
     ctrl.on_tree_select = lambda items: handle_tree_selection(items, state)
+
+    @state.change("selected_file")
+    def on_file_selected(**_):
+        add_file_to_tree(state)
